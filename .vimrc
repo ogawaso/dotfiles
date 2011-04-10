@@ -1,0 +1,74 @@
+set tabstop=8
+set softtabstop=4
+set shiftwidth=2
+set expandtab
+set smarttab
+set number
+set ruler
+set showcmd
+
+set autoindent
+set smartindent
+set incsearch
+set ignorecase
+set hlsearch
+set wildmenu
+set nobackup
+set list
+set showmode
+set laststatus=2
+syntax on
+filetype on
+filetype plugin indent on
+
+"set foldmethod=indent
+"set foldlevel=0
+
+let g:netrw_alto = 1
+let g:netrw_altv = 1
+
+
+map <F3>   :tabnext<CR>
+map <F2>   :tabprevious<CR>
+map <C-N>   :bnext<CR>
+map <C-P>   :bprevious<CR>
+map <C-W><C-V> :Vexplore!<CR>
+map <C-W><C-H> :Hexplore<CR>
+map! <C-W><C-V> <Esc>:Vexplore!<CR>
+map! <C-W><C-H> <Esc>:Hexplore<CR>
+imap <C-Space> <C-x><C-o>
+
+nnoremap <F4> :grep <cword> ./*
+
+"set enc=utf-8
+"set fenc=utf-8
+"set fencs=iso-2022-jp,euc-jp,cp932
+"
+"rails.vim
+let g:rails_level=4
+let g:rails_default_file="app/controllers/application.rb"
+let g:rails_default_database="mysql"
+
+"rubycomplete.vim
+"ruby set omnifunc=rubycomplete#Complete
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
+let g:rubycomplete_classes_in_global = 1
+
+" neocomplcache.vim
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_snippets_dir  = '~/.vim/bundle/snipmate.vim/snippets'
+
+imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+
+" pathogen.vim
+call pathogen#runtime_append_all_bundles()
+
+" quickrun.vim
+let g:quickrun_config = {}
+let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
