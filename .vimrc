@@ -46,7 +46,7 @@ nnoremap <F4> :grep <cword> ./*
 "
 "rails.vim
 let g:rails_level=4
-let g:rails_default_file="app/controllers/application.rb"
+let g:rails_default_file="app/controllers/application_controller.rb"
 let g:rails_default_database="mysql"
 
 "rubycomplete.vim
@@ -72,3 +72,35 @@ call pathogen#runtime_append_all_bundles()
 " quickrun.vim
 let g:quickrun_config = {}
 let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
+
+"smartchr
+inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
+
+"unite.vim$
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+nnoremap <silent> ,uo :<C-u>Unite outline<CR>
+nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+
+"vim-unite-history
+nnoremap <silent> ,uh :<C-u>Unite history/command<CR>
+
+"commentout.vim
+vmap ,# :s/^/#/<CR>:nohlsearch<CR>
+vmap ,/ :s/^/\/\//<CR>:nohlsearch<CR>
+vmap ,> :s/^/> /<CR>:nohlsearch<CR>
+vmap ," :s/^/\"/<CR>:nohlsearch<CR>
+vmap ,% :s/^/%/<CR>:nohlsearch<CR>
+vmap ,! :s/^/!/<CR>:nohlsearch<CR>
+vmap ,; :s/^/;/<CR>:nohlsearch<CR>
+vmap ,- :s/^/--/<CR>:nohlsearch<CR>
+vmap ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>:nohlsearch<CR>
+" wrapping comments
+vmap ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>:nohlsearch<CR>
+vmap ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:nohlsearch<CR>
+vmap ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:nohlsearch<CR>
+vmap ,d :s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/<CR>:nohlsearch<CR>
+
+" block comments
+vmap ,b v`<I<CR><esc>k0i/*<ESC>`>j0i*/<CR><esc><ESC>
+vmap ,h v`<I<CR><esc>k0i<!--<ESC>`>j0i--><CR><esc><ESC>
+
