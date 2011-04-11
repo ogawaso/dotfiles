@@ -12,11 +12,20 @@ local DEFAULT=$'%{\e[1;m%}'
 setopt prompt_subst
 setopt extended_glob
 
-PROMPT='[%~]'
+PROMPT='[%~][%t]'
 #PROMPT=$RED'[%~]'$DEFAULT
 
 #RPROMPT=$RED'%t'$DEFAULT
-RPROMPT='%t'
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '(%s)-[%b]'
+zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
+precmd () {
+  psvar=()
+  LANG=en_US.UTF-8 vcs_info
+  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+RPROMPT="%1(v|%F{green}%1v%f|)"
+            
 
 HISTFILE=$HOME/.zsh-history
 HISTSIZE=1000000
@@ -46,10 +55,7 @@ alias -s txt=vim
 alias -s html=w3m
 alias -s zip=zipinfo
 alias ls='ls -G'
-alias rubysrc='cd /opt/local/lib/ruby'
-alias mysql='/opt/local/bin/mysql5/'
 
-PATH=$PATH:/var/lib/gems/1.8/bin
 
 function chpwd(){ls}
 function fxg() {
