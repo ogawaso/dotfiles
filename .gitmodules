@@ -16,3 +16,9 @@
 [submodule ".vim/bundle/vimproc"]
 	path = .vim/bundle/vimproc
 	url = git://github.com/Shougo/vimproc.git
+[submodule ".vim/bundle/vim-smartchr"]
+	path = .vim/bundle/vim-smartchr
+	url = git://github.com/kana/vim-smartchr.git
+[submodule ".vim/bundle/unite-outline"]
+	path = .vim/bundle/unite-outline
+	url = git://github.com/h1mesuke/unite-outline.git
