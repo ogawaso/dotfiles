@@ -49,6 +49,15 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application_controller.rb"
 let g:rails_default_database="mysql"
 
+
+
+set rtp+=~/config/vimfiles/vundle.git/
+call vundle#rc()
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+
 "rubycomplete.vim
 "ruby set omnifunc=rubycomplete#Complete
 let g:rubycomplete_buffer_loading = 1
@@ -66,8 +75,6 @@ let g:neocomplcache_snippets_dir  = '~/.vim/bundle/snipmate.vim/snippets'
 imap <C-k>     <Plug>(neocomplcache_snippets_expand)
 smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 
-" pathogen.vim
-call pathogen#runtime_append_all_bundles()
 
 " quickrun.vim
 let g:quickrun_config = {}
