@@ -1,39 +1,3 @@
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
-	url = git://github.com/tpope/vim-pathogen.git
-[submodule ".vim/bundle/neocomplcache"]
-	path = .vim/bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
-[submodule ".vim/bundle/unite.vim"]
-	path = .vim/bundle/unite.vim
-	url = git://github.com/Shougo/unite.vim.git
-[submodule ".vim/bundle/vim-quickrun"]
-	path = .vim/bundle/vim-quickrun
-	url = git://github.com/thinca/vim-quickrun.git
-[submodule ".vim/bundle/vim-rails"]
-	path = .vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
-[submodule ".vim/bundle/vimproc"]
-	path = .vim/bundle/vimproc
-	url = git://github.com/Shougo/vimproc.git
-[submodule ".vim/bundle/vim-smartchr"]
-	path = .vim/bundle/vim-smartchr
-	url = git://github.com/kana/vim-smartchr.git
-[submodule ".vim/bundle/unite-outline"]
-	path = .vim/bundle/unite-outline
-	url = git://github.com/h1mesuke/unite-outline.git
-[submodule ".vim/bundle/vim-unite-history"]
-	path = .vim/bundle/vim-unite-history
-	url = git://github.com/thinca/vim-unite-history.git
-[submodule ".vim/bundle/git-vim"]
-	path = .vim/bundle/git-vim
-	url = git://github.com/motemen/git-vim.git
-[submodule ".vim/bundle/snipmate"]
-	path = .vim/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
-[submodule "snipmate-snippets"]
-	path = snipmate-snippets
-	url = git://github.com/scrooloose/snipmate-snippets
 [submodule "/Users/ogawaso/config/vimfiles/vundle.git"]
 	path = /Users/ogawaso/config/vimfiles/vundle.git
 	url = http://github.com/gmarik/vundle.git
