@@ -34,3 +34,6 @@
 [submodule "snipmate-snippets"]
 	path = snipmate-snippets
 	url = git://github.com/scrooloose/snipmate-snippets
+[submodule "/Users/ogawaso/config/vimfiles/vundle.git"]
+	path = /Users/ogawaso/config/vimfiles/vundle.git
+	url = http://github.com/gmarik/vundle.git
