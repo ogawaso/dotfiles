@@ -1,0 +1,14 @@
+[user]
+	mail = Soichiro Ogawa
+	email = ogawaso@gmail.com
+	name = ogawaso
+[core]
+	editor = vim
+[alias]
+	ci = commit
+	st = status
+	au = add -u
+	di = diff
+	co = checkout
+  kokomade = tag -f 'until' origin/master
+  newspaper = log -p --reverse --color 'until'..origin/master
