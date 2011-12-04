@@ -17,6 +17,8 @@ set nobackup
 set list
 set showmode
 set laststatus=2
+" no making .swp
+set nobackup
 syntax on
 filetype on
 filetype plugin indent on
