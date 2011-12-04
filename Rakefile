@@ -1,7 +1,9 @@
-require 'fileutils'
+task "default" => :setup
 
 
-if __FILE__ == $0
+desc 'make dev environment'
+task :setup do
+  require 'fileutils'
   home_dir = ENV['HOME']
   current_dir = File.dirname(__FILE__)
   vim_template_path = File.join(home_dir, ".vim", "templates")
