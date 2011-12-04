@@ -3,8 +3,15 @@ require 'fileutils'
 
 if __FILE__ == $0
   home_dir = ENV['HOME']
-  p home_dir
-  FileUtils.mkdir_p("#{home_dir}/.vim/autoload")
-  FileUtils.symlink("#{home_dir}/config/.vim/bundle/vim-pathogen/autoload/pathogen.vim", "#{home_dir}/.vim/autoload/pathogen.vim")
-  FileUtils.symlink("#{home_dir}/config/.vim/bundle", "#{home_dir}/.vim/bundle")
+  current_dir = File.dirname(__FILE__)
+  vim_template_path = File.join(home_dir, ".vim", "templates")
+  p "home:#{home_dir}"
+  p "current:#{current_dir}"
+
+  FileUtils.mkdir_p(vim_template_path)
+  FileUtils.cp(File.join(current_dir, "templates", "rb.tpl"), File.join(home_dir, ".vim"))
+  FileUtils.cp(File.join(current_dir, ".vimrc"), home_dir)
+  FileUtils.cp(File.join(current_dir, ".screenrc"), home_dir)
+  FileUtils.cp(File.join(current_dir, ".zshrc"), home_dir)
+
 end
