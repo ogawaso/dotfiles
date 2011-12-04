@@ -39,6 +39,13 @@ map! <C-W><C-H> <Esc>:Hexplore<CR>
 imap <C-Space> <C-x><C-o>
 
 nnoremap <F4> :grep <cword> ./*
+function! MagicComment()
+  return "# -*- coding: utf-8 -*-\<CR>"
+endfunction
+
+inoreabbrev <buffer> ## <C-R>=MagicComment()<CR>
+
+autocmd BufNewFile *.rb 0r ~/.vim/templates/rb.tpl
 
 "set enc=utf-8
 "set fenc=utf-8
