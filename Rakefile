@@ -1,3 +1,4 @@
+require 'rspec/core/rake_task'
 task "default" => :setup
 require './setup.rb'
 
@@ -6,5 +7,6 @@ task :setup do
   Setup.execute
 end
 
-task :spec do
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.pattern = "./spec/*.rb"
 end
