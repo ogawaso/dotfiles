@@ -58,6 +58,8 @@ alias -s txt=vim
 alias -s html=w3m
 alias -s zip=zipinfo
 alias ls='ls -G'
+alias g=git
+alias r=rails
 
 
 function chpwd(){ls}
