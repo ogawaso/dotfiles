@@ -58,3 +58,17 @@ let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
 
 "smartchr
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
+
+imap } }<Left>
+imap [] []<Left>
+imap () ()<Left>
+imap "" ""<Left>
+imap '' ''<Left>
+imap <> <><Left>
+
+function! RTrim()
+  let s:cursor = getpos(".")
+  %s/\s\+$//e
+  call setpos(".",  s:cursor)
+endfunction
+autocmd BufWritePre *.php,*.rb,*.js,*.bat call RTrim()
