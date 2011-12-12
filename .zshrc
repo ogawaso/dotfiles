@@ -63,8 +63,8 @@ alias r=rails
 
 
 function chpwd(){ls}
-function fxg() {
-  find -name '*.$1' | xargs grep -n '$2'
+function gs() {
+  git ls-files | xargs grep -n $1
 }
 
 function history-all {history -E 1}
@@ -92,3 +92,5 @@ _rake () {
 }
 
 compdef _rake rake
+
+[[ -s "/Users/ogawaso/.rvm/scripts/rvm" ]] && source "/Users/ogawaso/.rvm/scripts/rvm"  # This loads RVM into a shell session.
