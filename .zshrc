@@ -22,9 +22,25 @@ zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
 precmd () {
   psvar=()
   LANG=en_US.UTF-8 vcs_info
+  psvar[2]=$(_git_not_pushed)
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
-RPROMPT="%1(v|%F{green}%1v%f|)"
+function _git_not_pushed()
+{
+  if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
+    head="$(git rev-parse HEAD)"
+    for x in $(git rev-parse --remotes)
+    do
+      if [ "$head" = "$x" ]; then
+        return 0
+      fi
+    done
+    echo "NOT PUSHED!!!"
+  fi
+  return 0
+}
+
+RPROMPT="%1(v|%F{green}%1v$RED%2v%f|)"
             
 
 HISTFILE=$HOME/.zsh-history
