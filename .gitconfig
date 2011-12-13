@@ -5,10 +5,14 @@
 [core]
 	editor = vim
 [alias]
-	ci = commit
-	st = status
 	au = add -u
-	di = diff
+	br = branch
 	co = checkout
+	ci = commit
+	di = diff --color-words
+	p = pull --rebase
+	st = status
   kokomade = tag -f 'until' origin/master
   newspaper = log -p --reverse --color 'until'..origin/master
+[color]
+	ui = auto
