@@ -110,3 +110,7 @@ _rake () {
 compdef _rake rake
 
 [[ -s "/Users/ogawaso/.rvm/scripts/rvm" ]] && source "/Users/ogawaso/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+if [ $SHLVL = 1 ];then
+  screen
+fi
