@@ -83,6 +83,10 @@ function gs() {
   git ls-files | xargs grep -n $1
 }
 
+function gg() {
+  git grep -n --color $1
+}
+
 function history-all {history -E 1}
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
