@@ -1,3 +1,10 @@
+filetype off
+"vundle
+source ~/dotfiles/vimrc/vundle
+
+filetype plugin indent on
+
+
 source ~/dotfiles/vimrc/basic
 
 source ~/dotfiles/vimrc/completion
@@ -8,15 +15,10 @@ source ~/dotfiles/vimrc/ruby_setting
 "commentout.vim
 source ~/dotfiles/vimrc/commentout
 
-"vundle
-source ~/dotfiles/vimrc/vundle
-
 "unite.vim
 source ~/dotfiles/vimrc/unite
 
 syntax on
-filetype on
-filetype plugin indent on
 
 "set foldmethod=indent
 "set foldlevel=0
