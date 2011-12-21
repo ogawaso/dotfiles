@@ -1,4 +1,4 @@
-set rtp+=~/config/vimfiles/vundle.git/
+set rtp+=~/dotfiles/vundle.git/
 call vundle#rc()
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'

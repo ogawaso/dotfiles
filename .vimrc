@@ -1,18 +1,18 @@
-source ~/config/vimrc/basic
+source ~/dotfiles/vimrc/basic
 
-source ~/config/vimrc/completion
+source ~/dotfiles/vimrc/completion
 
 "ruby setting
-source ~/config/vimrc/ruby_setting
+source ~/dotfiles/vimrc/ruby_setting
 
 "commentout.vim
-source ~/config/vimrc/commentout
+source ~/dotfiles/vimrc/commentout
 
 "vundle
-source ~/config/vimrc/bundle
+source ~/dotfiles/vimrc/vundle
 
 "unite.vim
-source ~/config/vimrc/unite
+source ~/dotfiles/vimrc/unite
 
 syntax on
 filetype on
