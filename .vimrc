@@ -61,6 +61,9 @@ let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
 "smartchr
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
 
+"vimfiler
+:let g:vimfiler_as_default_explorer = 1
+
 imap } }<Left>
 imap [] []<Left>
 imap () ()<Left>
