@@ -6,4 +6,5 @@ Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-ref'
 Bundle 'thinca/vim-quickrun'
 Bundle 'tpope/vim-rails'
+Bundle 'git://github.com/sgur/unite-git_grep.git'
 
