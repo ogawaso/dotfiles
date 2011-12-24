@@ -71,6 +71,9 @@ imap "" ""<Left>
 imap '' ''<Left>
 imap <> <><Left>
 
+nnoremap <Esc><Esc> :nohlsearch<CR>
+
+
 function! RTrim()
   let s:cursor = getpos(".")
   %s/\s\+$//e
