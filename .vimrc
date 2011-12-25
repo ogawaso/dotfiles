@@ -61,11 +61,15 @@ let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
 
 "smartchr
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
+inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', '=')
+inoremap <expr> + smartchr#one_of(' + ')
+inoremap <expr> - smartchr#one_of(' - ')
+inoremap <expr> , smartchr#one_of(', ')
 
 "vimfiler
 ":let g:vimfiler_as_default_explorer = 1
 
-"toggle.vim
+"toggle.vim C - T
 let g:toggle_pairs = { 'and' : 'or', 'or' : 'and'}
 
 imap } }<Left>
