@@ -94,25 +94,6 @@ export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
 
 
-_rake_does_task_list_need_generating () {
-    if [[ ! -f .rake_tasks ]]; then return 0;
-    else
-        return $([[ Rakefile -nt .rake_tasks ]])
-    fi
-}
-
-_rake () {
-    if [[ -f Rakefile ]]; then
-        if _rake_does_task_list_need_generating; then
-            echo "\nGenerating .rake_tasks..." >&2
-            rake --silent --tasks | cut -d " " -f 2 >| .rake_tasks
-        fi
-        compadd $(<.rake_tasks)
-    fi
-}
-
-compdef _rake rake
-
 [[ -s "/Users/ogawaso/.rvm/scripts/rvm" ]] && source "/Users/ogawaso/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 if [ $SHLVL = 1 ];then
