@@ -3,10 +3,10 @@ call vundle#rc()
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-ref'
 Bundle 'thinca/vim-quickrun'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-speeddating'
 Bundle 'git://github.com/sgur/unite-git_grep.git'
+Bundle 'houtsnip/vim-emacscommandline'
 
