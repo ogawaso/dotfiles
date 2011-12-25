@@ -62,7 +62,10 @@ let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
 
 "vimfiler
-:let g:vimfiler_as_default_explorer = 1
+":let g:vimfiler_as_default_explorer = 1
+
+"toggle.vim
+let g:toggle_pairs = { 'and' : 'or', 'or' : 'and'}
 
 imap } }<Left>
 imap [] []<Left>
