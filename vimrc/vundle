@@ -11,4 +11,5 @@ Bundle 'git://github.com/sgur/unite-git_grep.git'
 Bundle 'houtsnip/vim-emacscommandline'
 Bundle 'taku-o/vim-toggle'
 Bundle 'vim-scripts/smartchr'
+Bundle 'mattn/calendar-vim'
 
