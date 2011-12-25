@@ -49,9 +49,10 @@ let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_snippets_dir  = '~/.vim/bundle/snipmate.vim/snippets'
+let g:neocomplcache_snippets_dir  = '~/dotfiles/snippets'
 
 imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 
 
 " quickrun.vim
