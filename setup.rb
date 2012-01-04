@@ -18,6 +18,8 @@ class Setup
       FileUtils.cp(File.join(current_dir, ".zshrc"), home_dir)
       FileUtils.cp(File.join(current_dir, ".gitconfig"), home_dir)
       FileUtils.cp(File.join(current_dir, ".gemrc"), home_dir)
+      `git submodule init`
+      `git submodule update`
 
     end
   end
