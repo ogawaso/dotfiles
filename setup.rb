@@ -17,6 +17,7 @@ class Setup
       FileUtils.cp(File.join(current_dir, ".screenrc"), home_dir)
       FileUtils.cp(File.join(current_dir, ".zshrc"), home_dir)
       FileUtils.cp(File.join(current_dir, ".gitconfig"), home_dir)
+      FileUtils.cp(File.join(current_dir, ".gemrc"), home_dir)
 
     end
   end

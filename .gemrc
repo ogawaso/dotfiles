@@ -1,0 +1,2 @@
+install:--nori --no-rdoc
+update:--nori --no-rdoc
