@@ -4,3 +4,4 @@ activity "Activity in window %."
 scrollback 4000
 startup_message off
 hardstatus alwayslastline "screen |%c %m/%d | %w"
+shell zsh
