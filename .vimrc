@@ -63,7 +63,7 @@ let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
 inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', '=')
 inoremap <expr> + smartchr#one_of(' + ')
-inoremap <expr> - smartchr#one_of(' - ')
+"inoremap <expr> - smartchr#one_of(' - ')
 inoremap <expr> , smartchr#one_of(', ')
 
 "vimfiler
