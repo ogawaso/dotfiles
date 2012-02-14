@@ -12,4 +12,5 @@ Bundle 'houtsnip/vim-emacscommandline'
 Bundle 'taku-o/vim-toggle'
 Bundle 'vim-scripts/smartchr'
 Bundle 'mattn/calendar-vim'
+Bundle 'vim-ruby/vim-ruby'
 
