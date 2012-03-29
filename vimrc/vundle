@@ -14,4 +14,4 @@ Bundle 'vim-scripts/smartchr'
 Bundle 'mattn/calendar-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kchmck / vim-coffee-script'
-
+Bundle 'scrooloose/nerdtree'
