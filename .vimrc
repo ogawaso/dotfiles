@@ -88,3 +88,5 @@ function! RTrim()
   call setpos(".",  s:cursor)
 endfunction
 autocmd BufWritePre *.php,*.erb,*.rb,*.js,*.bat call RTrim()
+
+autocmd BufRead,BufNewFile *.json set ft=javascript
