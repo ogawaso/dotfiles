@@ -100,3 +100,5 @@ source ~/.autojump/etc/profile.d/autojump.zsh
 if [ $SHLVL = 1 ];then
   screen
 fi
+
+eval "$(hub alias -s)"
