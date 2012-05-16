@@ -19,5 +19,6 @@ class Dotfiles < Thor
     end
     run("git submodule init")
     run("git submodule update")
+    run("cd hub && rake install prefix=/usr/local")
   end
 end
