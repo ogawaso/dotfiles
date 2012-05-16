@@ -3,7 +3,7 @@ require 'thor'
 class Dotfiles < Thor
   include Thor::Actions
 
-  desc 'setup', 'setup dotofiles'
+  desc 'setup', 'setup dotfiles'
 
   def self.source_root       # ファイルのコピー元のベースディレクトリ
     File.dirname(__FILE__)
@@ -19,6 +19,6 @@ class Dotfiles < Thor
     end
     run("git submodule init")
     run("git submodule update")
-    run("cd hub && rake install prefix=/usr/local")
+    run("cd hub.git && sudo rake install prefix=/usr/local")
   end
 end
