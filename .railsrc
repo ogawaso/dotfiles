@@ -1,1 +1,1 @@
--m -T -m https://github.com/ogawaso/rails_template/raw/master/template.rb
+-T -m https://github.com/ogawaso/rails_template/raw/master/template.rb --skip-bundle
