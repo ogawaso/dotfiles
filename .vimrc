@@ -18,6 +18,9 @@ source ~/dotfiles/vimrc/commentout
 "unite.vim
 source ~/dotfiles/vimrc/unite
 
+"vim-altr
+source ~/dotfiles/vimrc/altr
+
 syntax on
 
 "set foldmethod=indent
