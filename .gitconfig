@@ -16,3 +16,5 @@
   newspaper = log -p --reverse --color 'until'..origin/master
 [color]
 	ui = auto
+[github]
+	user = ogawaso
