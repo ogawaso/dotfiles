@@ -23,6 +23,7 @@ precmd () {
   psvar=()
   LANG=en_US.UTF-8 vcs_info
   psvar[2]=$(_git_not_pushed)
+  psvar[3]=`ruby -e 'puts "#{RUBY_VERSION}p#{RUBY_PATCHLEVEL}"'`
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 function _git_not_pushed()
@@ -40,7 +41,7 @@ function _git_not_pushed()
   return 0
 }
 
-RPROMPT="%1(v|%F{green}%1v$RED%2v%f|)"
+RPROMPT="%1(v|%F{green}%1v$RED%2v%f%3v|)"
             
 
 HISTFILE=$HOME/.zsh-history
@@ -92,6 +93,7 @@ function history-all {history -E 1}
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
 
 
 source ~/.autojump/etc/profile.d/autojump.zsh
@@ -102,3 +104,5 @@ if [ $SHLVL = 1 ];then
 fi
 
 eval "$(hub alias -s)"
+eval "$(rbenv init -)"
+source ~/.rbenv/completions/rbenv.zsh
