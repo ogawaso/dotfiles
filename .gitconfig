@@ -11,7 +11,7 @@
 	ci = commit
 	di = diff --color-words
 	p = pull --rebase
-	st = status -s -b
+	st = status
   kokomade = tag -f 'until' origin/master
   newspaper = log -p --reverse --color 'until'..origin/master
 [color]
