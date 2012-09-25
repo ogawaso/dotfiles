@@ -1,9 +1,11 @@
 set rtp+=~/dotfiles/vundle.git/
 call vundle#rc()
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplcache-snippet-complete'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
+Bundle 'ujihisa/unite-rake'
 Bundle 'thinca/vim-quickrun'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-speeddating'
