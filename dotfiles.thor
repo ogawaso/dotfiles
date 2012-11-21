@@ -14,7 +14,7 @@ class Dotfiles < Thor
     p destination_root
     directory "templates", "../.vim/templates"
 
-    ["vimrc", "screenrc", "zshrc", "gitconfig", "railsrc", "irbrc", "gemrc"].each do |f|
+    ["vimrc", "screenrc", "zshrc", "gitconfig", "railsrc", "irbrc", "gemrc", "tigrc"].each do |f|
       copy_file ".#{f}", "../.#{f}"
     end
 
