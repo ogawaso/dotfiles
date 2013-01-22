@@ -23,6 +23,7 @@ class Dotfiles < Thor
     run("gem install interactive_editor")
     run("gem install hub")
     run("gem install gem-src")
+    run("gem install reditor")
 
   end
 end
