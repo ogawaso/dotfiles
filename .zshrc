@@ -95,6 +95,8 @@ export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
 
+export EDITOR=vim
+
 
 #[[ -s "/Users/ogawaso/.rvm/scripts/rvm" ]] && source "/Users/ogawaso/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
