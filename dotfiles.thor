@@ -18,12 +18,10 @@ class Dotfiles < Thor
       copy_file ".#{f}", "../.#{f}"
     end
 
+    copy_file "default-gems", "~/.rbenv/default-gems"
+
     run("git submodule init")
     run("git submodule update")
-    run("gem install interactive_editor")
-    run("gem install hub")
-    run("gem install gem-src")
-    run("gem install reditor")
 
   end
 end
