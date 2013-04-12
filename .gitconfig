@@ -18,3 +18,7 @@
 	ui = auto
 [github]
 	user = ogawaso
+[commit]
+	cleanup = whitespace
+[push]
+	default = simple
