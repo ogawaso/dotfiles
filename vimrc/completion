@@ -1,7 +1,8 @@
 map <F3>   :tabnext<CR>
 map <F2>   :tabprevious<CR>
-"map <C-N>   :bnext<CR>
-""map <C-P>   :bprevious<CR>
+map gn   :bnext<CR>
+map gp   :bprevious<CR>
+map gd   :bd<CR>
 map <C-W><C-V> :Vexplore!<CR>
 map <C-W><C-H> :Hexplore<CR>
 map! <C-W><C-V> <Esc>:Vexplore!<CR>
