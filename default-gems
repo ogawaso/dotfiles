@@ -4,3 +4,4 @@ thor
 gem-src
 reditor
 chef
+rbenv-rehash
