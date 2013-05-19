@@ -14,6 +14,7 @@
 	st = status
   kokomade = tag -f 'until' origin/master
   newspaper = log -p --reverse --color 'until'..origin/master
+  reading = log -p --reverse --color 'reading'..HEAD
 [color]
 	ui = auto
 [github]
