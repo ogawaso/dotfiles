@@ -21,6 +21,8 @@ source ~/dotfiles/vimrc/unite
 "vim-altr
 source ~/dotfiles/vimrc/altr
 
+source ~/dotfiles/vimrc/auto_mkdir
+
 syntax on
 
 "set foldmethod=indent
