@@ -23,6 +23,8 @@ source ~/dotfiles/vimrc/altr
 
 source ~/dotfiles/vimrc/auto_mkdir
 
+source ~/dotfiles/vimrc/auto_save
+
 syntax on
 
 "set foldmethod=indent
