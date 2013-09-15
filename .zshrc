@@ -105,6 +105,6 @@ if [ $SHLVL = 1 ];then
   screen
 fi
 
-eval "$(hub alias -s)"
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 source ~/.rbenv/completions/rbenv.zsh
+eval "$(hub alias -s)"
