@@ -1,7 +1,7 @@
 set rtp+=~/dotfiles/vundle.git/
 call vundle#rc()
 Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippet-complete'
+"Bundle 'Shougo/neocomplcache-snippet-complete'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
@@ -26,3 +26,4 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle '907th/vim-auto-save'
+Bundle 'rhysd/accelerated-jk'

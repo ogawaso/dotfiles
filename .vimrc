@@ -24,6 +24,7 @@ source ~/dotfiles/vimrc/altr
 source ~/dotfiles/vimrc/auto_mkdir
 
 source ~/dotfiles/vimrc/auto_save
+source ~/dotfiles/vimrc/accelerated-jk
 
 syntax on
 
