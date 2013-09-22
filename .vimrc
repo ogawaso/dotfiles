@@ -12,9 +12,6 @@ source ~/dotfiles/vimrc/completion
 "ruby setting
 source ~/dotfiles/vimrc/ruby_setting
 
-"commentout.vim
-source ~/dotfiles/vimrc/commentout
-
 "unite.vim
 source ~/dotfiles/vimrc/unite
 
