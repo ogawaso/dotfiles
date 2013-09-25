@@ -20,3 +20,5 @@ set laststatus=2
 " no making .swp
 set noswapfile
 
+nmap <leader>l :set list!<CR>
+nmap <leader>n :set number!<CR>
