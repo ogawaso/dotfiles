@@ -97,3 +97,5 @@ autocmd BufWritePre *.php,*.erb,*.rb,*.js,*.bat,*.yml call RTrim()
 autocmd BufRead,BufNewFile *.json set ft=javascript
 "grep
 autocmd QuickFixCmdPost *grep* cwindow
+
+runtime macros/matchit.vim
