@@ -98,4 +98,7 @@ autocmd BufRead,BufNewFile *.json set ft=javascript
 "grep
 autocmd QuickFixCmdPost *grep* cwindow
 
+source $VIMRUNTIME/macros/matchit.vim
 runtime macros/matchit.vim
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
