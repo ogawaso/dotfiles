@@ -24,6 +24,7 @@ source ~/dotfiles/vimrc/auto_save
 source ~/dotfiles/vimrc/accelerated-jk
 source ~/dotfiles/vimrc/rspec
 source ~/dotfiles/vimrc/trim
+source ~/dotfiles/vimrc/nerd_tree
 
 syntax on
 
