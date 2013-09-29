@@ -23,6 +23,7 @@ source ~/dotfiles/vimrc/auto_mkdir
 source ~/dotfiles/vimrc/auto_save
 source ~/dotfiles/vimrc/accelerated-jk
 source ~/dotfiles/vimrc/rspec
+source ~/dotfiles/vimrc/trim
 
 syntax on
 
@@ -86,14 +87,6 @@ imap '' ''<Left>
 imap <> <><Left>
 
 nnoremap <Esc><Esc> :nohlsearch<CR>
-
-
-function! RTrim()
-  let s:cursor = getpos(".")
-  %s/\s\+$//e
-  call setpos(".",  s:cursor)
-endfunction
-autocmd BufWritePre *.php,*.erb,*.rb,*.js,*.bat,*.yml call RTrim()
 
 autocmd BufRead,BufNewFile *.json set ft=javascript
 "grep
