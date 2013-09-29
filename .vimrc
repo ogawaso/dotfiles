@@ -22,6 +22,7 @@ source ~/dotfiles/vimrc/auto_mkdir
 
 source ~/dotfiles/vimrc/auto_save
 source ~/dotfiles/vimrc/accelerated-jk
+source ~/dotfiles/vimrc/rspec
 
 syntax on
 
