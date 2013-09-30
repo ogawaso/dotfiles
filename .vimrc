@@ -25,6 +25,8 @@ source ~/dotfiles/vimrc/accelerated-jk
 source ~/dotfiles/vimrc/rspec
 source ~/dotfiles/vimrc/trim
 source ~/dotfiles/vimrc/nerd_tree
+source ~/dotfiles/vimrc/neocomplete
+source ~/dotfiles/vimrc/neosnippet
 
 syntax on
 
@@ -50,17 +52,6 @@ let g:rails_default_database="mysql"
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
 let g:rubycomplete_classes_in_global = 1
-
-" neocomplcache.vim
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_snippets_dir  = '~/dotfiles/snippets'
-
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 
 
 " quickrun.vim
