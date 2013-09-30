@@ -27,6 +27,7 @@ source ~/dotfiles/vimrc/trim
 source ~/dotfiles/vimrc/nerd_tree
 source ~/dotfiles/vimrc/neocomplete
 source ~/dotfiles/vimrc/neosnippet
+source ~/dotfiles/vimrc/anzu
 
 syntax on
 
