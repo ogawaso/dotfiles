@@ -31,6 +31,10 @@ source ~/dotfiles/vimrc/anzu
 
 syntax on
 
+" statusline
+" set statusline=%F%Q%l%{anzu#search_status()}
+set statusline=%F%m%r%h%w%{anzu#search_status()}
+
 "set foldmethod=indent
 "set foldlevel=0
 
@@ -57,7 +61,8 @@ let g:rubycomplete_classes_in_global = 1
 
 " quickrun.vim
 let g:quickrun_config = {}
-let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
+" let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
+let g:quickrun_config['ruby.rspec'] = { 'command': 'rspec', 'cmdopt': 'bundle exec', 'exec': '%o %c %s' }
 
 "smartchr
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
