@@ -33,7 +33,7 @@ syntax on
 
 " statusline
 " set statusline=%F%Q%l%{anzu#search_status()}
-set statusline=%F%m%r%h%w%{anzu#search_status()}
+set statusline=%F%m%r%h%w%{fugitive#statusline()}%{anzu#search_status()}
 
 "set foldmethod=indent
 "set foldlevel=0
