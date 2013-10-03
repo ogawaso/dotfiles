@@ -1,3 +1,9 @@
+" Set augroup.
+augroup MyAutoCmd
+  autocmd!
+augroup END
+
+
 filetype off
 "vundle
 source ~/dotfiles/vimrc/vundle
@@ -28,6 +34,7 @@ source ~/dotfiles/vimrc/nerd_tree
 source ~/dotfiles/vimrc/neocomplete
 source ~/dotfiles/vimrc/neosnippet
 source ~/dotfiles/vimrc/anzu
+source ~/dotfiles/vimrc/vimrc
 
 syntax on
 
