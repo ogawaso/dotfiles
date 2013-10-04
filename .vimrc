@@ -35,6 +35,7 @@ source ~/dotfiles/vimrc/neocomplete
 source ~/dotfiles/vimrc/neosnippet
 source ~/dotfiles/vimrc/anzu
 source ~/dotfiles/vimrc/vimrc
+source ~/dotfiles/vimrc/fugitive
 
 syntax on
 
