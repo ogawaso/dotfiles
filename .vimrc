@@ -67,11 +67,6 @@ let g:rubycomplete_rails = 1
 let g:rubycomplete_classes_in_global = 1
 
 
-" quickrun.vim
-let g:quickrun_config = {}
-" let g:quickrun_config['ruby.rspec'] = {'command': 'spec'}
-let g:quickrun_config['ruby.rspec'] = { 'command': 'rspec', 'cmdopt': 'bundle exec', 'exec': '%o %c %s' }
-
 "smartchr
 inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
 "inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', '=')
