@@ -11,32 +11,23 @@ source ~/dotfiles/vimrc/vundle
 filetype plugin indent on
 
 
-source ~/dotfiles/vimrc/basic
-
-source ~/dotfiles/vimrc/completion
-
-"ruby setting
-source ~/dotfiles/vimrc/ruby_setting
-
-"unite.vim
-source ~/dotfiles/vimrc/unite
-
-"vim-altr
-source ~/dotfiles/vimrc/altr
-
-source ~/dotfiles/vimrc/auto_mkdir
-
-source ~/dotfiles/vimrc/auto_save
 source ~/dotfiles/vimrc/accelerated-jk
-source ~/dotfiles/vimrc/rspec
-source ~/dotfiles/vimrc/trim
-source ~/dotfiles/vimrc/nerd_tree
+source ~/dotfiles/vimrc/altr
+source ~/dotfiles/vimrc/anzu
+source ~/dotfiles/vimrc/auto_mkdir
+source ~/dotfiles/vimrc/auto_save
+source ~/dotfiles/vimrc/basic
+source ~/dotfiles/vimrc/completion
+source ~/dotfiles/vimrc/fugitive
 source ~/dotfiles/vimrc/neocomplete
 source ~/dotfiles/vimrc/neosnippet
-source ~/dotfiles/vimrc/anzu
-source ~/dotfiles/vimrc/vimrc
-source ~/dotfiles/vimrc/fugitive
+source ~/dotfiles/vimrc/nerd_tree
 source ~/dotfiles/vimrc/nomotion
+source ~/dotfiles/vimrc/rspec
+source ~/dotfiles/vimrc/ruby_setting
+source ~/dotfiles/vimrc/trim
+source ~/dotfiles/vimrc/unite
+source ~/dotfiles/vimrc/vimrc
 
 syntax on
 
