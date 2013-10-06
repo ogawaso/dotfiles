@@ -36,6 +36,7 @@ source ~/dotfiles/vimrc/neosnippet
 source ~/dotfiles/vimrc/anzu
 source ~/dotfiles/vimrc/vimrc
 source ~/dotfiles/vimrc/fugitive
+source ~/dotfiles/vimrc/nomotion
 
 syntax on
 
