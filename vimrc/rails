@@ -2,3 +2,4 @@ nnoremap <Space>dm :<C-u>Rake db:migrate<CR>
 nnoremap <Space>ds :<C-u>Rake db:seeds<CR>
 nnoremap <Space>bo :<C-u>Bopen<CR>
 nnoremap <Space>bi :<C-u>Bundle<CR>
+nnoremap <Space>a :<C-u>!bundle exec annotate -i<CR>
