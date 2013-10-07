@@ -23,6 +23,7 @@ source ~/dotfiles/vimrc/neocomplete
 source ~/dotfiles/vimrc/neosnippet
 source ~/dotfiles/vimrc/nerd_tree
 source ~/dotfiles/vimrc/nomotion
+source ~/dotfiles/vimrc/rails
 source ~/dotfiles/vimrc/rspec
 source ~/dotfiles/vimrc/ruby_setting
 source ~/dotfiles/vimrc/trim
