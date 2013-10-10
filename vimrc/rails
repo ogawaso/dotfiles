@@ -5,6 +5,9 @@ nnoremap <Space>bo :<C-u>Bopen<CR>
 nnoremap <Space>bi :<C-u>Bundle<CR>
 nnoremap <Space>a :<C-u>!bundle exec annotate -i<CR>
 
+" open config/routes.rb
+nnoremap <Space>cr :<C-u>Einitializer<CR>
+
 
 nnoremap <Space>rc :<C-u>Unite rails/controller<CR>
 nnoremap <Space>rm :<C-u>Unite rails/model<CR>
