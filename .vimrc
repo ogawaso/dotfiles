@@ -6,31 +6,31 @@ augroup END
 
 filetype off
 "vundle
-source ~/dotfiles/vimrc/vundle
+source ~/dotfiles/vimrc/vundle.vim
 
 filetype plugin indent on
 
 
-source ~/dotfiles/vimrc/accelerated-jk
-source ~/dotfiles/vimrc/altr
-source ~/dotfiles/vimrc/anzu
-source ~/dotfiles/vimrc/auto_mkdir
-source ~/dotfiles/vimrc/auto_save
-source ~/dotfiles/vimrc/basic
-source ~/dotfiles/vimrc/completion
-source ~/dotfiles/vimrc/fugitive
-source ~/dotfiles/vimrc/neocomplete
-source ~/dotfiles/vimrc/neosnippet
-source ~/dotfiles/vimrc/nerd_tree
-source ~/dotfiles/vimrc/nomotion
-source ~/dotfiles/vimrc/switch
-source ~/dotfiles/vimrc/rails
-source ~/dotfiles/vimrc/rename
-source ~/dotfiles/vimrc/rspec
-source ~/dotfiles/vimrc/ruby_setting
-source ~/dotfiles/vimrc/trim
-source ~/dotfiles/vimrc/unite
-source ~/dotfiles/vimrc/vimrc
+source ~/dotfiles/vimrc/accelerated-jk.vim
+source ~/dotfiles/vimrc/altr.vim
+source ~/dotfiles/vimrc/anzu.vim
+source ~/dotfiles/vimrc/auto_mkdir.vim
+source ~/dotfiles/vimrc/auto_save.vim
+source ~/dotfiles/vimrc/basic.vim
+source ~/dotfiles/vimrc/completion.vim
+source ~/dotfiles/vimrc/fugitive.vim
+source ~/dotfiles/vimrc/neocomplete.vim
+source ~/dotfiles/vimrc/neosnippet.vim
+source ~/dotfiles/vimrc/nerd_tree.vim
+source ~/dotfiles/vimrc/nomotion.vim
+source ~/dotfiles/vimrc/switch.vim
+source ~/dotfiles/vimrc/rails.vim
+source ~/dotfiles/vimrc/rename.vim
+source ~/dotfiles/vimrc/rspec.vim
+source ~/dotfiles/vimrc/ruby_setting.vim
+source ~/dotfiles/vimrc/trim.vim
+source ~/dotfiles/vimrc/unite.vim
+source ~/dotfiles/vimrc/vimrc.vim
 
 syntax on
 
