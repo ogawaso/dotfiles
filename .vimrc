@@ -5,8 +5,7 @@ augroup END
 
 
 filetype off
-"vundle
-source ~/dotfiles/vimrc/vundle.vim
+source ~/dotfiles/vimrc/neobundle.vim
 
 filetype plugin indent on
 
