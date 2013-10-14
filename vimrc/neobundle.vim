@@ -8,6 +8,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle '907th/vim-auto-save'
+NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'Keithbsmiley/rspec.vim'
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
