@@ -1,4 +1,5 @@
 nnoremap <silent> <Space>ev  :<C-u>edit $MYVIMRC<CR>
+nnoremap <silent> <Space>nv  :<C-u>edit ~/dotfiles/vimrc/neobundle.vim<CR>
 
 nnoremap <silent> <Space>rv :<C-u>source $MYVIMRC \| if has('gui_running') \| source $MYGVIMRC \| endif <CR>
 
