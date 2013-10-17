@@ -28,6 +28,7 @@ source ~/dotfiles/vimrc/rails.vim
 source ~/dotfiles/vimrc/rename.vim
 source ~/dotfiles/vimrc/rspec.vim
 source ~/dotfiles/vimrc/ruby_setting.vim
+source ~/dotfiles/vimrc/smartchr.vim
 source ~/dotfiles/vimrc/trim.vim
 source ~/dotfiles/vimrc/unite.vim
 source ~/dotfiles/vimrc/vimrc.vim
