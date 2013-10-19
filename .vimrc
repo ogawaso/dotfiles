@@ -17,6 +17,7 @@ source ~/dotfiles/vimrc/auto_mkdir.vim
 source ~/dotfiles/vimrc/auto_save.vim
 source ~/dotfiles/vimrc/basic.vim
 source ~/dotfiles/vimrc/completion.vim
+source ~/dotfiles/vimrc/ctags.vim
 source ~/dotfiles/vimrc/deploy.vim
 source ~/dotfiles/vimrc/fugitive.vim
 source ~/dotfiles/vimrc/neocomplete.vim
