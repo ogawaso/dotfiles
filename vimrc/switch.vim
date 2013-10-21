@@ -6,6 +6,7 @@ let g:switch_custom_definitions = [
       \   ['if', 'unless'],
       \   ['while', 'until'],
       \   ['\.blank?', '\.present?'],
+      \   ['be_blank', 'be_present'],
       \   ['include', 'extend'],
       \   ['class', 'module'],
       \   ['.inject', '.delete_if'],
