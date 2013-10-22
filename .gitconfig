@@ -15,6 +15,7 @@
   kokomade = tag -f 'until' origin/master
   newspaper = log -p --reverse --color 'until'..origin/master
   reading = log -p --reverse --color 'reading'..HEAD
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 [color]
 	ui = auto
 [github]
