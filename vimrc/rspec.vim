@@ -23,7 +23,11 @@ let g:quickrun_config['ruby.rspec'] = {
   \  'exec': 'bundle exec rspec %s'
   \ }
 
+function! RspecQuickrun()
+  let b:quickrun_config = {'type' : 'ruby.rspec'}
+endfunction
+
 augroup RunRspec
   autocmd!
-  autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
+  autocmd BufReadPost *_spec.rb call RspecQuickrun()
 augroup END
