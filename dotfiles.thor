@@ -17,6 +17,9 @@ class Dotfiles < Thor
     unless Dir.exist?("~/.vim/bundle/neobundle.vim")
       system('git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim')
     end
+    unless Dir.exist?("~/zsh-completions")
+      system('git clone git://github.com/zsh-users/zsh-completions.git ~/zsh-completions')
+    end
 
     ["vimrc", "screenrc", "zshrc", "gitconfig", "railsrc", "irbrc", "gemrc", "tigrc"].each do |f|
       copy_file ".#{f}", "../.#{f}"

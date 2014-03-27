@@ -66,8 +66,6 @@ setopt auto_cd
 setopt auto_pushd
 setopt list_packed
 
-autoload -U compinit
-compinit -u
 
 setopt correct
 
@@ -108,3 +106,7 @@ fi
 eval "$(rbenv init - zsh)"
 source ~/.rbenv/completions/rbenv.zsh
 eval "$(hub alias -s)"
+fpath=(~/zsh-completions/src $fpath)
+
+autoload -U compinit
+compinit -u
