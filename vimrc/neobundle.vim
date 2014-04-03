@@ -25,6 +25,8 @@ NeoBundleLazy 'alpaca-tc/alpaca_tags', {
      \   'commands' : ['Tags', 'TagsSet', 'TagsBundle', 'TagsCleanCache'],
       \   'unite_sources' : ['tags']
       \ }}
+
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'h1mesuke/unite-outline'
@@ -43,6 +45,7 @@ NeoBundle 'osyo-manga/unite-quickfix'
 NeoBundle 'osyo-manga/vim-anzu'
 NeoBundle 'rhysd/accelerated-jk'
 NeoBundle 'rhysd/vim-textobj-ruby'
+NeoBundle 'deris/vim-textobj-enclosedsyntax'
 NeoBundle 'rbtnn/vimconsole.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
