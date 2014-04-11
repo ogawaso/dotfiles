@@ -95,3 +95,6 @@ source $VIMRUNTIME/macros/matchit.vim
 runtime macros/matchit.vim
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+if system('uname') == "Linux\n"
+  set clipboard=unnamedplus
+endif
