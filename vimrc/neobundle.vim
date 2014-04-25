@@ -19,13 +19,6 @@ NeoBundle 'Shougo/vimproc', {
   \    'unix' : 'make -f make_unix.mak',
   \  },
   \}
-NeoBundleLazy 'alpaca-tc/alpaca_tags', {
-      \ 'depends': ['Shougo/vimproc', 'Shougo/unite.vim'],
-      \ 'autoload' : {
-     \   'commands' : ['Tags', 'TagsSet', 'TagsBundle', 'TagsCleanCache'],
-      \   'unite_sources' : ['tags']
-      \ }}
-
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'digitaltoad/vim-jade'
