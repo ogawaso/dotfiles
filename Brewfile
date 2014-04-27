@@ -35,7 +35,7 @@ install tree      || true
 install openssl   || true
 install libyaml   || true
 install readline  || true
-install screen      || true
+install screen    || true
 install markdown  || true
 install nkf       || true
 install ag        || true
@@ -43,10 +43,12 @@ install ag        || true
 ## Languages
 install rbenv            || true
 install ruby-build       || true
+install node             || true
 install go               || true
 install haskell-platform || true
 install scala            || true
-install elixir          || true
+install erlang           || true
+install elixir           || true
 
 ## DevOps
 install docker      || true
