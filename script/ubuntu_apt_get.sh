@@ -45,15 +45,4 @@ sudo apt-get install libqtwebkit-dev -y
 #tig
 sudo apt-get install tig -y
 
-#ruby
-mkdir src
-cd src
-wget http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.bz2
-tar jxvf ruby-2.0.0-p247.tar.bz2
-cd ruby-2.0.0-p247
-./configure
-make && sudo make install
-# todo rbenv
-#git clone https://github.com/sstephenson/ruby-buld.git ~/.rbenv/plugins/ruby-build
-# git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
 
