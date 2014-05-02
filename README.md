@@ -1,4 +1,5 @@
-# osx setup commands
+# setup commands
+## osx
 - xcode
 ```console
 xcode-select -install
@@ -14,9 +15,26 @@ cd dotfiles
 ```
 
 - install from Brewfile
-```onsole
+```console
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew bundle
+```
+
+- setup dotfiles
+```console
+thor dotfiles:setup
+```
+
+## ubuntu
+- run install script
+```console
+sh script/ubuntu_apt_get.sh
+```
+
+- git clone
+```console
+git clone git://github.com/ogawaso/dotfiles.git
+cd dotfiles
 ```
 
 - setup dotfiles
