@@ -30,7 +30,7 @@ class Dotfiles < Thor
 
     npms = YAML.load_file("./npm.yml")
     npms.each do |npm|
-      `npm install -f #{npm}`
+      `npm install -g #{npm}`
     end
 
   end

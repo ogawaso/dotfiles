@@ -4,3 +4,4 @@ thor
 gem-src
 chef
 rbenv-rehash
+serverspec
