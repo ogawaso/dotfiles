@@ -1,4 +1,5 @@
 require 'thor'
+require 'yaml'
 
 class Dotfiles < Thor
   include Thor::Actions
@@ -26,6 +27,11 @@ class Dotfiles < Thor
     end
 
     copy_file "default-gems", "~/.rbenv/default-gems"
+
+    npms = YAML.load_file("./npm.yml")
+    npms.each do |npm|
+      `npm install -f #{npm}`
+    end
 
   end
 end
