@@ -2,7 +2,5 @@ bundler
 hub
 thor
 gem-src
-reditor
 chef
-vagrant
 rbenv-rehash
