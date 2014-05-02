@@ -22,7 +22,17 @@ class Dotfiles < Thor
       system('git clone git://github.com/zsh-users/zsh-completions.git ~/zsh-completions')
     end
 
-    ["vimrc", "screenrc", "zshrc", "gitconfig", "railsrc", "irbrc", "gemrc", "tigrc"].each do |f|
+    [
+      "vimrc",
+      "screenrc",
+      "zshrc",
+      "gitconfig",
+      "railsrc",
+      "irbrc",
+      "gemrc",
+      "tigrc",
+      "rspec"
+    ].each do |f|
       copy_file ".#{f}", "../.#{f}"
     end
 
