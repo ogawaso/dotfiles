@@ -43,12 +43,15 @@ install ag        || true
 ## Languages
 install rbenv            || true
 install ruby-build       || true
-install node             || true
 install go               || true
 install haskell-platform || true
 install scala            || true
-install erlang           || true
+install erlang --devel   || true
 install elixir           || true
+
+#  javascript
+install node             || true
+install phantomjs        || true
 
 ## DevOps
 install docker      || true
