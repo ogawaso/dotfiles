@@ -30,6 +30,7 @@ install gibo  || true
 install coreutils || true
 install wget      || true
 install curl      || true
+install curl-ca-bundle  || true
 install proctools || true
 install tree      || true
 install openssl   || true
@@ -40,9 +41,12 @@ install markdown  || true
 install nkf       || true
 install ag        || true
 
-## Languages
+#ruby
 install rbenv            || true
 install ruby-build       || true
+install hub              || true
+
+## Languages
 install go               || true
 install haskell-platform || true
 install scala            || true
