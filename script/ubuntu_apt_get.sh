@@ -45,4 +45,6 @@ sudo apt-get install libqtwebkit-dev -y
 #tig
 sudo apt-get install tig -y
 
+#aws
+sudo apt-get install awscli -y
 
