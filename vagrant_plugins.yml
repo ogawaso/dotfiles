@@ -1,0 +1,5 @@
+- vagrant-aws
+- vagrant-digitalocean
+- vagrant-omnibus
+- vagrant-vbguest
+- sahara

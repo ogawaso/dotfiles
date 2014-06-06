@@ -43,5 +43,9 @@ class Dotfiles < Thor
       `npm install -g #{npm}`
     end
 
+    vagrant_plugins = YAML.load_file("./vagrant_plugins.yml")
+    vagrant_plugins.each do |p|
+      `vagrant plugin install #{p}`
+    end
   end
 end
