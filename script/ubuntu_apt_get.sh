@@ -20,6 +20,7 @@ update-alternatives --set editor /usr/bin/vim.basic
 sudo apt-get install git -y
 
 sudo apt-get install apache2 -y
+sudo apt-get install libsqlite3-dev
 sudo apt-get install mysql-server -y
 
 sudo apt-get install zlib1g-dev -y
