@@ -6,9 +6,9 @@ upgrade || true
 
 # Add Repository
 tap homebrew/versions    || true
-tap phinze/homebrew-cask || true
 tap homebrew/binary      || true
 tap thoughtbot/formulae  || true
+tap caskroom/cask        || true
 
 # Packages
 
@@ -58,8 +58,6 @@ install node             || true
 install phantomjs        || true
 
 ## DevOps
-install docker      || true
-install boot2docker || true
 install packer      || true
 
 ## Heroku
@@ -77,6 +75,7 @@ cask install kobito        || true
 cask install virtualbox    || true
 cask install vagrant       || true
 cask install dash          || true
+cask install boot2docker   || true
 
 # Remove outdated versions
 cleanup
