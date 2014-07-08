@@ -15,8 +15,6 @@ tap caskroom/cask        || true
 ## Shell
 install zsh   || true
 
-## Editor
-install vim || true
 
 ## Git
 install git   || true
@@ -56,6 +54,9 @@ install elixir           || true
 #  javascript
 install node             || true
 install phantomjs        || true
+
+## Editor
+install vim --devel --with-lua || true
 
 ## DevOps
 install packer      || true
