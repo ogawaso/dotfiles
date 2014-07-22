@@ -11,7 +11,7 @@ filetype plugin indent on
 
 
 source ~/dotfiles/vimrc/accelerated-jk.vim
-source ~/dotfiles/vimrc/altr.vim
+"source ~/dotfiles/vimrc/altr.vim
 source ~/dotfiles/vimrc/anzu.vim
 source ~/dotfiles/vimrc/auto_mkdir.vim
 source ~/dotfiles/vimrc/auto_save.vim
