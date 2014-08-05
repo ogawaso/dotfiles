@@ -62,3 +62,5 @@ NeoBundle 'tsukkee/unite-help'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/smartchr'
 NeoBundle 'rking/ag.vim'
+
+NeoBundleCheck
