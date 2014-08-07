@@ -75,6 +75,8 @@ alias -s zip=zipinfo
 alias ls='ls -G'
 alias g=git
 alias r=rails
+alias gcd='cd $(ghq list -p | peco)'
+alias gh='gh-open $(ghq list -p | peco)'
 
 
 function chpwd(){ls}
