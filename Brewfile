@@ -19,10 +19,8 @@ install zsh   || true
 ## Git
 install git   || true
 install hub   || true
-install gitsh || true
 install gist  || true
 install tig   || true
-install gibo  || true
 
 ## Utils
 install coreutils || true
@@ -37,7 +35,6 @@ install readline  || true
 install screen    || true
 install markdown  || true
 install nkf       || true
-install ag        || true
 
 #ruby
 install rbenv            || true
@@ -65,14 +62,13 @@ install packer      || true
 install heroku-toolbelt || true
 
 ## Image
-install imagemagick || true
+#install imagemagick || true
 
 # Casks
 install brew-cask
 cask install google-chrome || true
 cask install dropbox       || true
 cask install alfred        || true
-cask install kobito        || true
 cask install virtualbox    || true
 cask install vagrant       || true
 cask install dash          || true
