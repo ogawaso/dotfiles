@@ -1,3 +1,4 @@
 gemsrc_clone_root: ~/src
+gemsrc_use_ghq: true
 install: --no-rdoc --no-ri
 update: --no-rdoc --no-ri
