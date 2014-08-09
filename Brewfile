@@ -9,6 +9,9 @@ tap homebrew/versions    || true
 tap homebrew/binary      || true
 tap thoughtbot/formulae  || true
 tap caskroom/cask        || true
+tap motemen/ghq          || true
+tap peco/peco            || true
+tap homebrew/dupes       || true
 
 # Packages
 
@@ -40,6 +43,11 @@ install nkf       || true
 install rbenv            || true
 install ruby-build       || true
 install hub              || true
+install lixml2           || true
+install lixslt           || true
+install libiconv         || true
+link libxml2
+link libxslt
 
 ## Languages
 install go               || true
@@ -47,11 +55,13 @@ install haskell-platform || true
 install scala            || true
 install erlang --devel   || true
 install elixir           || true
+install python          || true
 
 #  javascript
 install node             || true
 install phantomjs        || true
 
+install mercurial        || true
 ## Editor
 install vim --devel --with-lua || true
 
@@ -61,8 +71,9 @@ install packer      || true
 ## Heroku
 install heroku-toolbelt || true
 
-## Image
-#install imagemagick || true
+# tool
+brew install ghq         || true
+brew install peco        || true
 
 # Casks
 install brew-cask
