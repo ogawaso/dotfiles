@@ -94,6 +94,11 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
+if [ -x "`which go`"]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME/src
+  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+fi
 
 export EDITOR=vim
 export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
