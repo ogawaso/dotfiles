@@ -98,3 +98,5 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 if system('uname') == "Linux\n"
   set clipboard=unnamedplus
 endif
+
+let g:go_bin_path = $HOME . '/src' 
