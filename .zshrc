@@ -94,10 +94,14 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
-if [ -x "`which go`"]; then
+
+if [ -x `which go` ]
+then
   export GOROOT=`go env GOROOT`
-  export GOPATH=$HOME/src
+  export GOPATH=$HOME
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+else
+  echo "failure go path setting"
 fi
 
 export EDITOR=vim
