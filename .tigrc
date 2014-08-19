@@ -2,3 +2,5 @@ bind main o !@hub browse -- commit/%(commit)
 bind main G move-last-line
 bind diff o !@hub browse -- commit/%(commit)
 bind log  o !@hub browse -- commit/%(commit)
+bind main R !git rebase -i %(commit)
+bind diff R !git rebase -i %(commit)
