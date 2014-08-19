@@ -72,8 +72,8 @@ install packer      || true
 install heroku-toolbelt || true
 
 # tool
-brew install ghq         || true
-brew install peco        || true
+install ghq         || true
+install peco        || true
 
 # Casks
 install brew-cask
