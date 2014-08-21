@@ -105,6 +105,7 @@ else
 fi
 
 export EDITOR=vim
+
 export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 
@@ -114,9 +115,23 @@ if [ $SHLVL = 1 ];then
   screen
 fi
 
+if [ -x `which direnv` ]
+then
+  eval "$(direnv hook zsh)"
+else
+  echo 'failed divenv setting'
+fi
+
 eval "$(rbenv init - zsh)"
 source ~/.rbenv/completions/rbenv.zsh
-eval "$(hub alias -s)"
+
+if [ -x `which hub` ]
+then
+  eval "$(hub alias -s)"
+else
+  echo 'failed hub setting'
+fi
+
 fpath=(~/zsh-completions/src $fpath)
 
 autoload -U compinit

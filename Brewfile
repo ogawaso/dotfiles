@@ -38,6 +38,7 @@ install readline  || true
 install screen    || true
 install markdown  || true
 install nkf       || true
+install direnv    || true
 
 #ruby
 install rbenv            || true
@@ -67,6 +68,7 @@ install vim --devel --with-lua || true
 
 ## DevOps
 install packer      || true
+install ansible     || true
 
 ## Heroku
 install heroku-toolbelt || true
