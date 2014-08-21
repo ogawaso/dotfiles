@@ -81,7 +81,6 @@ install peco        || true
 install brew-cask
 cask install google-chrome || true
 cask install dropbox       || true
-cask install alfred        || true
 cask install virtualbox    || true
 cask install vagrant       || true
 cask install dash          || true
