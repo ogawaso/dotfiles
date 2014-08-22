@@ -88,6 +88,10 @@ function gg() {
   git grep -n --color $1
 }
 
+function ggvim() {
+  vim $(git grep -n --no-color $@ | grep def | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+}
+
 function history-all {history -E 1}
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
