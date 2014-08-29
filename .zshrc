@@ -75,8 +75,6 @@ alias -s zip=zipinfo
 alias ls='ls -G'
 alias g=git
 alias r=rails
-alias gcd='cd $(ghq list -p | peco)'
-alias gh='gh-open $(ghq list -p | peco)'
 
 
 function chpwd(){ls}
@@ -88,10 +86,6 @@ function gg() {
   git grep -n --color $1
 }
 
-function ggvim() {
-  vim $(git grep -n --no-color $@ | grep def | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
-}
-
 function history-all {history -E 1}
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
@@ -99,14 +93,6 @@ export PATH=/opt/local/lib:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
 
-if [ -x `which go` ]
-then
-  export GOROOT=`go env GOROOT`
-  export GOPATH=$HOME
-  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-else
-  echo "failure go path setting"
-fi
 
 export EDITOR=vim
 
@@ -119,21 +105,51 @@ if [ $SHLVL = 1 ];then
   screen
 fi
 
-if [ -x `which direnv` ]
+if [ `which direnv` ]
 then
   eval "$(direnv hook zsh)"
 else
   echo 'failed divenv setting'
 fi
 
-eval "$(rbenv init - zsh)"
-source ~/.rbenv/completions/rbenv.zsh
 
-if [ -x `which hub` ]
+if [ `which hub` ]
 then
   eval "$(hub alias -s)"
 else
   echo 'failed hub setting'
+fi
+
+if [ -x `which go` ]
+then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME
+  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+else
+  echo "failure go path setting"
+fi
+
+if [ `which peco` ]
+then
+  alias gcd='cd $(ghq list -p | peco)'
+  alias gh='gh-open $(ghq list -p | peco)'
+  alias ll='ls -la | peco'
+  alias tp='top | peco'
+  alias pt='ps aux  | peco'
+  function ggvim() {
+    vim $(git grep -n --no-color $@ | grep def | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+  }
+else
+  echo "not installed peco"
+fi
+
+
+if [ `which rbenv` ]
+then
+  eval "$(rbenv init - zsh)"
+  source ~/.rbenv/completions/rbenv.zsh
+else
+  echo 'not install rbenv'
 fi
 
 fpath=(~/zsh-completions/src $fpath)
