@@ -63,5 +63,6 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/smartchr'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'sorah/unite-ghq'
 
 NeoBundleCheck
