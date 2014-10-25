@@ -21,6 +21,7 @@ source ~/dotfiles/vimrc/ctags.vim
 source ~/dotfiles/vimrc/deploy.vim
 source ~/dotfiles/vimrc/fugitive.vim
 source ~/dotfiles/vimrc/global.vim
+source ~/dotfiles/vimrc/golang.vim
 source ~/dotfiles/vimrc/neocomplete.vim
 source ~/dotfiles/vimrc/neosnippet.vim
 source ~/dotfiles/vimrc/nerd_tree.vim

@@ -24,3 +24,4 @@ nmap <leader>l :set list!<CR>
 nmap <leader>n :set number!<CR>
 
 nnoremap <Space>b :<C-u>buffers<CR>
+let mapleader = ','
