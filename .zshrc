@@ -68,6 +68,12 @@ setopt pushd_ignore_dups
 setopt list_packed
 
 
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars " /=;@:{},|"
+zstyle ':zle:*' word-style unspecified
+
+
 setopt correct
 
 alias -s txt=vim
