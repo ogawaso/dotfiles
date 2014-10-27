@@ -64,6 +64,7 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' list-colors ''
 setopt auto_cd
 setopt auto_pushd
+setopt pushd_ignore_dups
 setopt list_packed
 
 
