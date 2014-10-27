@@ -66,6 +66,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'sorah/unite-ghq'
 NeoBundle 'szw/vim-tags'
+NeoBundle 'majutsushi/tagbar'
 
 call neobundle#end()
 
