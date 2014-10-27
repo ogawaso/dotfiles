@@ -161,7 +161,15 @@ else
   echo 'not install rbenv'
 fi
 
-fpath=(~/zsh-completions/src $fpath)
+if [ -f $HOME/.zsh/antigen/antigen.zsh ]
+then
+  source $HOME/.zsh/antigen/antigen.zsh
+  antigen bundle zsh-users/zsh-syntax-highlighting
+  antigen bundle zsh-users/zsh-completions src
+  antigen apply
+else
+  echo 'not install antigen'
+fi
 
 autoload -U compinit
 compinit -u
