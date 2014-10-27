@@ -74,6 +74,8 @@ zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
 
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 setopt correct
 
 alias -s txt=vim
