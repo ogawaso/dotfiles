@@ -13,7 +13,7 @@ NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/vimproc', {
   \  'build' : {
   \    'mac' : 'make -f make_mac.mak',
@@ -65,6 +65,7 @@ NeoBundle 'vim-scripts/smartchr'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'sorah/unite-ghq'
+NeoBundle 'szw/vim-tags'
 
 call neobundle#end()
 
