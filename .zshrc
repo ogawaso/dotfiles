@@ -161,6 +161,13 @@ else
   echo 'not install rbenv'
 fi
 
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -f $PYENV_ROOT ]
+then
+  export PATH=$PYENV_ROOT/bin:$PATH
+  eval "$(pyenv init -)"
+fi
+
 if [ -f $HOME/.zsh/antigen/antigen.zsh ]
 then
   source $HOME/.zsh/antigen/antigen.zsh
