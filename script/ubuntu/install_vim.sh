@@ -13,8 +13,8 @@ sudo apt-get install libncurses5-dev -y
 sudo apt-get install luajit -y
 sudo apt-get install libluajit-5.1-dev -y
 sudo apt-get install liblua-5.1-dev -y
-sudo apt-get install python3-dev
-sudo apt-get install ruby-dev
+sudo apt-get install python3-dev -y
+sudo apt-get install ruby-dev -y
 
 hg clone https://vim.googlecode.com/hg/ $DIR
 cd $DIR
