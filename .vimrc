@@ -67,7 +67,7 @@ let g:rubycomplete_classes_in_global = 1
 
 
 "smartchr
-inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
+"inoremap <expr> <buffer> {  smartchr#loop('{', '#{', '{{{')
 "inoremap <expr> = smartchr#one_of(' = ', ' == ', ' === ', '=')
 "inoremap <expr> + smartchr#one_of(' + ')
 "inoremap <expr> - smartchr#one_of(' - ')
@@ -84,6 +84,7 @@ imap [] []<Left>
 imap () ()<Left>
 imap "" ""<Left>
 imap '' ''<Left>
+imap `` ``<Left>
 imap <> <><Left>
 
 nnoremap <Esc><Esc> :nohlsearch<CR>
