@@ -134,6 +134,7 @@ then
   export GOROOT=`go env GOROOT`
   export GOPATH=$HOME
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+  source $GOROOT/../share/zsh/site-functions/go
 else
   echo "failure go path setting"
 fi
