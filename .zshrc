@@ -105,7 +105,6 @@ export PATH=$HOME/.rbenv/bin:$PATH
 
 export EDITOR=vim
 
-export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 
 #[[ -s "/Users/ogawaso/.rvm/scripts/rvm" ]] && source "/Users/ogawaso/.rvm/scripts/rvm"  # This loads RVM into a shell session.
