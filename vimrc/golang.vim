@@ -8,3 +8,4 @@ au FileType go nmap <leader>t <Plug>(go-test)
 
 au FileType go set nolist
 au FileType go set noexpandtab
+au FileType go set shiftwidth=4
