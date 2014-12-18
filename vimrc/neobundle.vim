@@ -68,6 +68,7 @@ NeoBundle 'sorah/unite-ghq'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'cohama/agit.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 
 call neobundle#end()
 
