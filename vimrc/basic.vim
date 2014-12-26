@@ -17,11 +17,16 @@ set nobackup
 set list
 set showmode
 set laststatus=2
+set display=lastline
+set pumheight=10
 " no making .swp
 set noswapfile
+set showmatch
+set matchtime=1
 
 nmap <leader>l :set list!<CR>
 nmap <leader>n :set number!<CR>
 
 nnoremap <Space>b :<C-u>buffers<CR>
+nnoremap Y y$
 let mapleader = ','
