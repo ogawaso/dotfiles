@@ -1,90 +1,90 @@
 # Make sure using latest Homebrew
-update || true
+brew update || true
 
 # Update already-installed formula
-upgrade || true
+brew upgrade || true
 
 # Add Repository
-tap homebrew/versions    || true
-tap homebrew/binary      || true
-tap thoughtbot/formulae  || true
-tap caskroom/cask        || true
-tap motemen/ghq          || true
-tap peco/peco            || true
-tap homebrew/dupes       || true
+brew tap homebrew/versions    || true
+brew tap homebrew/binary      || true
+brew tap thoughtbot/formulae  || true
+brew tap caskroom/cask        || true
+brew tap motemen/ghq          || true
+brew tap peco/peco            || true
+brew tap homebrew/dupes       || true
 
 # Packages
 
 ## Shell
-install zsh   || true
+brew install zsh   || true
 
 
 ## Git
-install git   || true
-install hub   || true
-install gist  || true
-install tig   || true
+brew install git   || true
+brew install --HEAD hub   || true
+brew install gist  || true
+brew install tig   || true
 
 ## Utils
-install coreutils || true
-install wget      || true
-install curl      || true
-install curl-ca-bundle  || true
-install proctools || true
-install tree      || true
-install openssl   || true
-install libyaml   || true
-install readline  || true
-install screen    || true
-install markdown  || true
-install nkf       || true
-install direnv    || true
+brew install coreutils || true
+brew install wget      || true
+brew install curl      || true
+#install curl-ca-bundle  || true
+#install proctools || true
+brew install tree      || true
+brew install openssl   || true
+brew install libyaml   || true
+brew install readline  || true
+brew install screen    || true
+#brew install markdown  || true
+#install nkf       || true
+brew install direnv    || true
 
 #ruby
-install rbenv            || true
-install ruby-build       || true
-install hub              || true
-install lixml2           || true
-install lixslt           || true
-install libiconv         || true
-link libxml2
-link libxslt
+brew install rbenv            || true
+brew install ruby-build       || true
+brew install hub              || true
+brew install lixml2           || true
+brew install lixslt           || true
+brew install libiconv         || true
+brew link libxml2
+brew link libxslt
 
 ## Languages
 install go               || true
-install haskell-platform || true
-install scala            || true
-install erlang --devel   || true
-install elixir           || true
-install python          || true
+#install haskell-platform || true
+#install scala            || true
+#install erlang --devel   || true
+#install elixir           || true
+#install python          || true
 
 #  javascript
-install node             || true
-install phantomjs        || true
+#install node             || true
+#install phantomjs        || true
 
 install mercurial        || true
 ## Editor
-install vim --devel --with-lua || true
+brew install vim --devel --with-lua || true
 
 ## DevOps
-install packer      || true
-install ansible     || true
+#install packer      || true
+#install ansible     || true
 
 ## Heroku
-install heroku-toolbelt || true
+#install heroku-toolbelt || true
 
 # tool
-install ghq         || true
-install peco        || true
+brew install ghq         || true
+brew install peco        || true
 
 # Casks
-install brew-cask
-cask install google-chrome || true
-cask install dropbox       || true
-cask install virtualbox    || true
-cask install vagrant       || true
-cask install dash          || true
-cask install boot2docker   || true
+brew install brew-cask
+brew cask install google-chrome || true
+brew cask install dropbox       || true
+brew cask install virtualbox    || true
+brew cask install vagrant       || true
+brew cask install dash          || true
+brew cask install boot2docker   || true
 
 # Remove outdated versions
-cleanup
+brew cleanup
