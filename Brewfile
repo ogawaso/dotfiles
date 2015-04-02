@@ -86,5 +86,7 @@ brew cask install vagrant       || true
 brew cask install dash          || true
 brew cask install boot2docker   || true
 
+brew install awscli
+
 # Remove outdated versions
 brew cleanup
