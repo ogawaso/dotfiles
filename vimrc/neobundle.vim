@@ -69,7 +69,17 @@ NeoBundle 'szw/vim-tags'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'cohama/agit.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'tfnico/vim-gradle'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'derekwyatt/vim-sbt'
+
+
+
+NeoBundle 'lambdalisue/unite-grep-vcs'
+NeoBundleLazy 'lambdalisue/unite-grep-vcs', {
+  \ 'autoload': {
+  \    'unite_sources': ['grep/git', 'grep/hg'],
+  \}}
 
 call neobundle#end()
-
 NeoBundleCheck
