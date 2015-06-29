@@ -26,6 +26,7 @@ set matchtime=1
 
 nmap <leader>l :set list!<CR>
 nmap <leader>n :set number!<CR>
+nmap <leader>c cs"'<CR>
 
 nnoremap <Space>b :<C-u>buffers<CR>
 nnoremap Y y$

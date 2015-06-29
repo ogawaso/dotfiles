@@ -88,5 +88,9 @@ brew cask install boot2docker   || true
 
 brew install awscli
 
+#android
+brew cask install java
+brew cask install android-studio
+
 # Remove outdated versions
 brew cleanup
