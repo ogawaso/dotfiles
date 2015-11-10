@@ -12,6 +12,7 @@ brew tap caskroom/cask        || true
 brew tap motemen/ghq          || true
 brew tap peco/peco            || true
 brew tap homebrew/dupes       || true
+#brew tap homebrew/science     || true
 
 # Packages
 
@@ -91,6 +92,12 @@ brew install awscli
 #android
 brew cask install java
 brew cask install android-studio
+
+# R
+#brew install gfortran
+#brew cask install xquartz
+#brew install r
+#brew cask install rstudio
 
 # Remove outdated versions
 brew cleanup
