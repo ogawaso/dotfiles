@@ -23,6 +23,8 @@ set pumheight=10
 set noswapfile
 set showmatch
 set matchtime=1
+set spell
+set spelllang=en,cjk
 
 nmap <leader>l :set list!<CR>
 nmap <leader>n :set number!<CR>
