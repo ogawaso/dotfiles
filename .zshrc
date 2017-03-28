@@ -84,6 +84,8 @@ alias -s zip=zipinfo
 alias ls='ls -G'
 alias g=git
 alias r=rails
+alias gbr='g br'
+alias gst='g st'
 
 
 function chpwd(){ls}
