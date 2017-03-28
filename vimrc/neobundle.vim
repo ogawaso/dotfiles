@@ -72,6 +72,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tfnico/vim-gradle'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'derekwyatt/vim-sbt'
+NeoBundle 'toyamarinyon/vim-swift'
 
 
 
