@@ -4,6 +4,7 @@
 	name = Soichiro Ogawa
 [core]
 	editor = vim
+        excludesfile = ~/.gitignore_global
 [alias]
 	au = add -u
 	br = branch
